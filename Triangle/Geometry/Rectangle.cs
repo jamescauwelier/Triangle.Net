@@ -130,6 +130,14 @@ namespace TriangleNet.Geometry
             }
         }
 
+        public void Expand(List<Vertex> vertices)
+        {
+            foreach (var v in vertices)
+            {
+                Expand(v);
+            }
+        }
+
         /// <summary>
         /// Expand rectangle to include given rectangle.
         /// </summary>
